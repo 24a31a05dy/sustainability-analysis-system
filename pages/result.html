@@ -1,0 +1,20 @@
+<h1>🌱 Your Sustainability Score</h1>
+
+<h2>{{ score }}/100</h2>
+
+<img src="/static/chart.png" width="400">
+
+<h3>Breakdown</h3>
+<ul>
+<li>Energy: {{ energy }}</li>
+<li>Water: {{ water }}</li>
+<li>Waste: {{ waste }}</li>
+<li>Carbon: {{ carbon }}</li>
+</ul>
+
+<h3>AI Suggestions</h3>
+<ul>
+{% for tip in recommendations %}
+<li>{{ tip }}</li>
+{% endfor %}
+</ul>
